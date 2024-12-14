@@ -1,4 +1,4 @@
-## AWS-Terraform basic + S3c
+## AWS-Terraform basic + S3
 ## David Eliason 12/14/2024
 
 
