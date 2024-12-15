@@ -14,6 +14,11 @@ data "aws_ami" "amazon2" {
   }
 }
 
+resource "aws_key_pair" "id_rsa" {
+  key_name   = "id_rsa"
+  public_key = file("~/.ssh/id_rsa.pub")
+}
+
 resource "aws_spot_instance_request" "awstf5_ec2" {
   ami           = data.aws_ami.amazon2.id
   instance_type = "t3.micro"
